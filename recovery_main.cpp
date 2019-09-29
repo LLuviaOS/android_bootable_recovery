@@ -477,7 +477,7 @@ int main(int argc, char** argv) {
   // Set up adb_keys and enable root before starting ADB.
   if (is_ro_debuggable() && !fastboot) {
     copy_userdata_files();
-    android::base::SetProperty("aosip.service.adb.root", "1");
+    android::base::SetProperty("lluvia.service.adb.root", "1");
   }
 
   while (true) {
